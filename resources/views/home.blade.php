@@ -20,5 +20,11 @@ $titoloPagina = "Hello World";
 </head>
 <body>
     @include('menu');
+
+    <ul>
+    @foreach($lista as $key)
+        <li>{{$key}}</li>
+    @endforeach
+    </ul>
 </body>
 </html>

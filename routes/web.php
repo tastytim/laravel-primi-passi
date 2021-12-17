@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         "lista" => [
-            "Home",
-            "Page1",
-            "Page2"
+            "item 1",
+            "item 2",
+            "item 3"
         ]
     ];
     return view('home', $data);
@@ -27,25 +27,11 @@ Route::get('/', function () {
 
 
 Route::get('/page1', function () {
-    $data = [
-        "lista" => [
-            "Home",
-            "Page1",
-            "Page2"
-        ]
-    ];
-    return view('page1', $data);
+    return view('page1');
 })->name("page1");
 
 
 
 Route::get('/page2', function () {
-    $data = [
-        "lista" => [
-            "Home",
-            "Page1",
-            "Page2"
-        ]
-    ];
-    return view('page2', $data);
+    return view('page2');
 })->name("page2");
